@@ -9,17 +9,16 @@
     <form method="POST" action="https://requestb.in/1fcol1i1">
 
         <label for="email">Email Address</label>
-        <input id="email" name="email" type="text" placeholder="Enter Email Address">
+            <input id="email" name="email" type="text" placeholder="Enter Email Address">
         <br>
         <label for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="Enter Password">
+            <input id="password" name="password" type="password" placeholder="Enter Password">
         <br>
-        <input type="submit">
+            <input type="submit">
         <hr>
         <label for="bio">bio</label>
-        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself!"></textarea>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself!"></textarea>
         <hr>
-        <br>
         <h3>How did you hear about us?</h3>
             <label for="billboard">
                 <input type="checkbox" name="hear" id="billboard" value="billboard">Billboard<br>
@@ -34,6 +33,14 @@
                 <input type="checkbox" name="hear" id="other" value="other">Other<br>
             </label>
         <hr>
+        <label for="os">What operating system are you using?
+            <select name="os">
+                <option name="linux" id="os">Linux</option>
+                <option name="osx" id="os">Mac OSX</option>
+                <option name="windows" id="os">Windows</option>
+                <option name="other" id="os">other</option>
+            </select>
+        </label>
     </form>
 </body>
 </html>
