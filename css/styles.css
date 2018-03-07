@@ -25,3 +25,11 @@ ul{
     list-style: square;
 }
 
+table {
+    padding: 50px;
+}
+
+tr{
+    font-family: "Arial Hebrew Scholar", sans-serif;
+}
+
