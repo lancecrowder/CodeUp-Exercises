@@ -15,10 +15,13 @@ h2 {
 }
 
 body {
-    background-image: url("../IMG/BlackstoneWall.jpg");
+    background-image: url("../IMG/stars.jpg");
     background-repeat: repeat;
+    font-family: 'Rammetto One', cursive;
+    color: Orange;
 }
 
 ul{
     list-style: square;
 }
+
