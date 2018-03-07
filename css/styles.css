@@ -1,4 +1,13 @@
 h1 {
-    color: rebeccapurple;
+    color: purple;
     text-decoration: underline;
+    clear: both;
 }
+
+#container {
+    margin: 50px auto;
+    width: 500px;
+    padding: 10px;
+}
+
+
