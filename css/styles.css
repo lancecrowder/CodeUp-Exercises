@@ -1,7 +1,8 @@
-h1 {
-    color: purple;
-    text-decoration: underline;
+/*h1 {*/
+    /*color: purple;*/
+    /*text-decoration: underline;*/
 }
+
 
 #container {
     margin: 50px auto;
@@ -9,7 +10,11 @@ h1 {
     padding: 10px;
 }
 
-h2 {
+/*#container {*/
+    /*text-align: center;*/
+/*}*/
+
+h1, h2, h3 {
     color: blue;
     text-decoration: underline;
 }
@@ -25,12 +30,8 @@ ul{
     list-style: square;
 }
 
-table {
-    padding: 50px;
-}
-
-tr{
-    font-family: "Arial Hebrew Scholar", sans-serif;
+table tr td {
+    border: 2px purple solid;
 }
 
 a:link {
