@@ -7,7 +7,6 @@
 <body>
     <h1>Register With Us</h1>
     <form method="POST" action="https://requestb.in/1fcol1i1">
-
         <label for="email">Email Address</label>
             <input id="email" name="email" type="text" placeholder="Enter Email Address">
         <br>
@@ -19,24 +18,23 @@
         <hr>
         <h3>How did you hear about us?</h3>
             <label for="billboard">
-                <input type="checkbox" name="hear" id="billboard" value="billboard">Billboard<br>
+                <input type="radio" name="hear" id="billboard" value="billboard">Billboard<br>
             </label>
             <label for="radio">
-                <input type="checkbox" name="hear" id="radio" value="radio">Radio Advertisement<br>
+                <input type="radio" name="hear" id="radio" value="radio">Radio Advertisement<br>
             </label>
             <label for="internet">
-                <input type="checkbox" name="hear" id="internet" value="internet">Internet Advertisement<br>
+                <input type="radio" name="hear" id="internet" value="internet">Internet Advertisement<br>
             </label>
-            <label for="other">
-                <input type="checkbox" name="hear" id="other" value="other">Other<br>
+                <input type="radio" name="hear" id="other">Other <input type="text" name="hear" id="other">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
             </label>
         <hr>
-        <label for="os">What operating system are you using?
-            <select name="os">
-                <option name="linux" id="os">Linux</option>
-                <option name="osx" id="os">Mac OSX</option>
-                <option name="windows" id="os">Windows</option>
-                <option name="other" id="os">other</option>
+        <label for="browser">What operating system are you using?
+            <select name="browser">
+                <option name="chrome" id="browser">Chrome</option>
+                <option name="firefox" id="browser">Firefox</option>
+                <option name="safari" id="browser">Safari</option>
+                <option name="other" id="browser">other</option>
             </select>
         </label>
         <br>
