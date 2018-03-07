@@ -19,3 +19,6 @@ body {
     background-repeat: repeat;
 }
 
+ul{
+    list-style: square;
+}
