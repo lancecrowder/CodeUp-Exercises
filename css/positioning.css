@@ -6,7 +6,8 @@
     margin:50px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 10px;
+    float: left;
+    position: relative;
 }
 
 #box-red{
@@ -23,6 +24,7 @@
 
 #box-green{
     background-color: green;
+    clear: left;
 }
 
 #box-blue{
@@ -33,10 +35,14 @@
     background-color: violet;
 }
 
-#top-row {
-    float: left;
+.box    >img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
 }
 
-#bottom-row {
-    float: left;
+body>img {
+    position:fixed;
+    top: 0;
+    right: 0;
 }
