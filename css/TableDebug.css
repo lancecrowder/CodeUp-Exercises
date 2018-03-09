@@ -10,14 +10,22 @@ body{
     height: 100%;
     background-color: #999f8e;
     position: absolute;
+    text-align: center;
 }
 
 .box#right{
     width: 80%;
-    height: 275px;
+    height: 100%;
     float: right;
+}
+.padding{
+    padding: 0 20px;
 }
 
 a{
     color: #000;
+}
+
+#logo{
+    color: #0E4f36;
 }
