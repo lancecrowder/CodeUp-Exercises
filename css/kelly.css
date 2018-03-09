@@ -1,0 +1,16 @@
+.box {
+    height: 100px;
+    width: 50px;
+}
+
+#blue {
+    color: #0065bf;
+}
+
+#green {
+    color: #00AE44;
+}
+
+#red {
+    color: #ff000000;
+}
