@@ -1,12 +1,23 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Trebuchet MS',verdana
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS',verdana, sans-serif;
+    background-color: #d2d8c7;
 }
 
-.box #left{
+.box#left{
     width: 20%;
     height: 100%;
-    float: left;
-    background-color: #999f8e
+    background-color: #999f8e;
+    position: absolute;
+}
+
+.box#right{
+    width: 80%;
+    height: 275px;
+    float: right;
+}
+
+a{
+    color: #000;
 }
