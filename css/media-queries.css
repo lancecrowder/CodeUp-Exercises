@@ -6,7 +6,6 @@
 @media screen and (max-width:767px) {
 
     .alert-info {
-        width: 100%;
         height: 3em;
         text-align: center;
         border: 1px solid #CCCCCC;
@@ -14,7 +13,6 @@
     }
 
     .header-img img{
-        width: 100:;
     }
 
     body > h1 {
@@ -27,7 +25,6 @@
         background-color: #CCCCCC;
         list-style-type: none;
         text-align: center;
-        width: 100%;
     }
 
     ul {
@@ -59,18 +56,15 @@
 
         margin-top: 5em ;
         height: 385px;
-        width: 890px;
     }
 
     .main{
-        width: 65%;
         margin-right: 0;
         float: left;
         clear: bottom;
     }
 
     .sub-section{
-        width: 30%;
         float: right;
     }
 
