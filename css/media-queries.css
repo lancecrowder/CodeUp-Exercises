@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (max-width:767px) {
 
     .alert-info {
@@ -6,6 +11,10 @@
         text-align: center;
         border: 1px solid #CCCCCC;
         background-color: #C0ffff;
+    }
+
+    .header-img img{
+        width: 100:;
     }
 
     body > h1 {
