@@ -73,23 +73,43 @@
                         </label>
                     </ul>
                     <div class="card-footer text-muted">
-                        <p class="text-right"><button href="#nextstep">Next Step</button></></p>
+                        <p class="text-right"><button><a href="#cheese"></a> Next Step</button></></p>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
-                <a name="nextstep"></a>
-                <a class="nav-link blue-back" href="#"><span class="badge badge-light">2</span> Cheese and Sauce</a>
+                <a class="nav-link blue-back" href="#"><span class="badge badge-light">2</span> Choose Cheese and Sauce</a>
                 <div class="card" style="width: 89rem">
                     <div class="card-header">
-                        Featured
+                        Cheese
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> Cras justo odio</li>
-                        <li class="list-group-item"> Dapibus ac facilisis in</li>
-                        <li class="list-group-item"> Vestibulum at eros</li>
-                    </ul>
+                    <div class="card-sub-header">How much?</div>
+                    <select name="cheese" id="cheese">
+                        <option value="light">Light</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="extra">Extra</option>
+                        <option value="double">Double</option>
+                    </select>
+                    <div class="card-header">
+                        Sauce
+                    </div>
+                    <div class="card-sub-header">What Type?</div>
+                    <select name="sauce" id="sauce">
+                        <option value="tomato">Tomato Sauce</option>
+                        <option value="marinara" selected>Marinara Sauce</option>
+                        <option value="bbq">BBQ Sauce</option>
+                        <option value="alfredo">Alfredo Sauce</option>
+                    </select><div class="card-sub-header">How Much?</div>
+                    <select name="sauce-amount" id="sauce-ammount">
+                        <option value="light">Light Sauce</option>
+                        <option value="normal" selected>Normal Sauce</option>
+                        <option value="extra">Extra Sauce</option>
+                    </select>
+                    <div class="card-footer">
+                        <p class="text-right"><button><a href="#cheese"></a>Previous Step</button> <button>Next Step</button></></p>
+                    </div>
             </li>
+            <a name="cheese"></a>
             <li class="nav-item">
                 <a class="nav-link blue-back" href="#"><span class="badge badge-light">3</span> Toppings</a>
                 <div class="card" style="width: 89rem">
@@ -101,6 +121,9 @@
                         <li class="list-group-item"> Dapibus ac facilisis in</li>
                         <li class="list-group-item"> Vestibulum at eros</li>
                     </ul>
+                    <div class="card-footer text-muted">
+                        <p class="text-right"><button><a href="#cheese"></a> Checkout</button></></p>
+                    </div>
                 </div>
             </li>
         </ul>
