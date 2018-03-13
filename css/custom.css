@@ -1,12 +1,14 @@
 .jumbotron {
     background-image: url("../IMG/pizza.png");
     background-size: cover;
+    width: 100%;
 }
 
-.container > h1 {
+.display-4 {
     text-align: center;
     background-color: #ffffff;
     opacity: .7;
+    width: 100%;
 }
 
 .container{
@@ -24,4 +26,7 @@ button, .blue-back{
     width: 100%;
 }
 
+.jumbotron>h1{
+    width: 100%;
+}
 
