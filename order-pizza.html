@@ -30,18 +30,80 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             </li>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button type="button" class="btn btn-light"><span class="glyphicon glyphicon-user"></span>Sign In
-                </button>
-            </nav>
+        </ul>
+        <a class="navbar-brand" href="#"><img src=("...IMG/user.png") alt="">Sign In</a>
     </div>
-</nav>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Welcome to Pizza World!</h1>
+    </nav>
+    <div class="d-none d-sm-block">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Welcome to Pizza World!</h1>
+            </div>
+        </div>
     </div>
-</div>
-
+    <h4>Build Your Own Pizza</h4>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link blue-back" href="#"><span class="badge badge-light">1</span> Size and Crust</a>
+                <div class="card" style="width: 89rem">
+                    <div class="card-header">
+                        Hand Tossed
+                    </div>
+                    <div class="card-sub-header">
+                        Garlic seasoned crust with a rich, buttery taste.
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <label for="hand10">
+                        <li class="list-group-item"><input type="radio" name="crust" id="hand10" value="hand10" aria-label="Text input with radio button"> Small (10")</li>
+                        </label>
+                        <label for="hand12">
+                        <li class="list-group-item"><input type="radio" name="crust" id="hand12" value="hand12" aria-label="Text input with radio button"> Medium (12")</li>
+                        </label>
+                    </ul>
+                    <div class="card-header">
+                        Crispy Thin
+                    </div>
+                    <div class="card-sub-deaher"> Thin enough for optimum crispy to crunchy ratio</div>
+                    <ul class="list-group list-group-flush">
+                        <label for="thin10">
+                            <li class="list-group-item"><input type="radio" name="crust" id="thin10" value="thin10" aria-label="Text input with radio button"> Small (10")</li>
+                        </label>
+                        <label for="thin12">
+                            <li class="list-group-item"><input type="radio" name="crust" id="thin12" value="thin12" aria-label="Text input with radio button"> Medium (12")</li>
+                        </label>
+                    </ul>
+                    <div class="card-footer text-muted">
+                        <p class="text-right"><button href="#nextstep">Next Step</button></></p>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a name="nextstep"></a>
+                <a class="nav-link blue-back" href="#"><span class="badge badge-light">2</span> Cheese and Sauce</a>
+                <div class="card" style="width: 89rem">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Cras justo odio</li>
+                        <li class="list-group-item"> Dapibus ac facilisis in</li>
+                        <li class="list-group-item"> Vestibulum at eros</li>
+                    </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link blue-back" href="#"><span class="badge badge-light">3</span> Toppings</a>
+                <div class="card" style="width: 89rem">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Cras justo odio</li>
+                        <li class="list-group-item"> Dapibus ac facilisis in</li>
+                        <li class="list-group-item"> Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
 <!-- Main page content -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
