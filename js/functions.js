@@ -8,9 +8,9 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
- function sayHello(name = prompt("What's your name?")) {
-    return ("Hello, " + name)
-}
+(function sayHello(name = prompt("What's your name?")) {
+    return (alert ("Hello, " + name + "!!!"))
+})()
 
 
 /**
@@ -20,12 +20,10 @@
  *
  * console.log 'helloMessage' to check your work
  */
-function sayHello(helloMessage = "Lance") {
-        return (helloMessage)
+
+var helloMessage =function sayHello("Lance") {
+    return
 }
-
-
-console.log(sayHello());
 
 /**
  * TODO:
@@ -33,7 +31,6 @@ console.log(sayHello());
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-
 
 
 // Don't modify the following line, it generates a random number between 1 and 3
