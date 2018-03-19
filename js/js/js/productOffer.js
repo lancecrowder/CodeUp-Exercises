@@ -4,4 +4,5 @@ var premiumMember = confirm("Are you a Premium Member?");
 
 var offered = (premiumMember && !offerExpired) || (!offerExpired && itemCount >= 2);
 
+
 alert(offered);
