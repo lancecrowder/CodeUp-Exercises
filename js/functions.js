@@ -8,6 +8,10 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+ function sayHello(name = prompt("What's your name?")) {
+    return ("Hello, " + name)
+}
+
 
 /**
  * TODO:
@@ -16,6 +20,12 @@
  *
  * console.log 'helloMessage' to check your work
  */
+function sayHello(helloMessage = "Lance") {
+        return (helloMessage)
+}
+
+
+console.log(sayHello());
 
 /**
  * TODO:
@@ -23,6 +33,8 @@
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
