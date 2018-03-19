@@ -1,4 +1,6 @@
-var itemCount = prompt("How many itmes do you have?");
+"use strict";
+
+var itemCount = prompt("How many items do you have?");
 var offerExpired = confirm("Has offer expired?");
 var premiumMember = confirm("Are you a Premium Member?");
 

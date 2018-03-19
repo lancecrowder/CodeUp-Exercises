@@ -1,3 +1,5 @@
+"use strict";
+
 var lMdays = prompt("How many days are you renting Little Mermaid?");
 var bBdays = prompt("How many days are you renting Brother Bear?");
 var hDays = prompt("How many days are you renting Hercules?");
