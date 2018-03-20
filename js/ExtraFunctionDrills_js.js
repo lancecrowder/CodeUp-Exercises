@@ -91,10 +91,20 @@
 
 //Write a function named square that accepts a number and returns the number times itself
 
+// var aNumber = prompt("Please enter a Number");
+//
+// function square(aNumber) {
+//     return (Number(aNumber) * Number(aNumber))
+// }
+//
+// alert("The Square of your number is: " + square(aNumber));
+
+//Write a function named cube that accepts a number and returns the number times itself times itself
+
 var aNumber = prompt("Please enter a Number");
 
-function square(aNumber) {
-    return (Number(aNumber) * Number(aNumber))
+function cube(aNumber) {
+    return (Number(aNumber) * Number(aNumber) * Number(aNumber))
 }
 
-alert("The Square of your number is: " + square(aNumber));
+alert("The Cube of your number is: " + cube(aNumber));
