@@ -83,19 +83,18 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-var tipPercent = prompt ("What percent would you like to tip?");
-var billAmount = prompt("How much is the bil?");
+// var tipPercent = prompt ("What percent would you like to tip?");
+// var billAmount = prompt("How much is the bil?");
+//
+// tipPercent = Number(tipPercent);
+// billAmount = Number(billAmount);
+//
+// function tipAmount(tipPercent, billAmount) {
+//     return (billAmount * tipPercent);
+// }
+//
+// console.log (tipAmount(tipPercent, billAmount));
 
-tipPercent = Number(tipPercent);
-billAmount = Number(billAmount);
-
-function tipAmount(tipPercent, billAmount) {
-    return (billAmount * tipPercent);
-}
-
-console.log (tipAmount(tipPercent, billAmount));
-
-alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2))
 
 /**
  * TODO:
@@ -103,6 +102,8 @@ alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2))
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+// alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2));
 
 /**
  * TODO:
@@ -118,6 +119,20 @@ alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+var originalPrice = prompt("How much is regular price of the item?");
+var discountPercent = prompt("What is the discount percent?");
+
+originalPrice = Number(originalPrice);
+discountPercent = Number(discountPercent);
+
+function applyDiscount(originalPrice, discountPercent) {
+    return (originalPrice * discountPercent)
+}
+
+console.log(applyDiscount(originalPrice, discountPercent));
+
+alert("Discount: $" + applyDiscount(originalPrice,discountPercent));
 
 // function decrement(someNumber) {
 //     console.log('decrement was called')
