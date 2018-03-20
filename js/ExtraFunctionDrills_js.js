@@ -101,10 +101,20 @@
 
 //Write a function named cube that accepts a number and returns the number times itself times itself
 
+// var aNumber = prompt("Please enter a Number");
+//
+// function cube(aNumber) {
+//     return (Number(aNumber) * Number(aNumber) * Number(aNumber))
+// }
+//
+// alert("The Cube of your number is: " + cube(aNumber));
+
+//Write a function named half that accepts a number and returns the number halved
+
 var aNumber = prompt("Please enter a Number");
 
-function cube(aNumber) {
-    return (Number(aNumber) * Number(aNumber) * Number(aNumber))
+function half(aNumber) {
+    return (Number(aNumber) / 2)
 }
 
-alert("The Cube of your number is: " + cube(aNumber));
+alert("The Cube of your number is: " + half(aNumber));
