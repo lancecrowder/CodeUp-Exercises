@@ -62,15 +62,29 @@
 
 //Write a function named hasSpaces that accepts a string and returns true if the string contains any space characters
 
-var aString = prompt("Please type a String.");
+// var aString = prompt("Please type a String.");
+//
+// function hasSpaces(aString) {
+//     if (aString.indexOf(" ") === -1) {
+//         return false
+//     } else {
+//         return true
+//     }
+// }
+//
+// alert("Your String has spaces: " + hasSpaces(aString));
 
-function hasSpaces(aString) {
-    if (aString.indexOf(" ") === -1) {
-        return false
-    } else {
+//Write a function named isFive that accepts a number and returns true if the number is equal to 5
+
+var aNumber = prompt("Please, enter a number");
+
+
+function isFive(aNumber) {
+    if (Number(aNumber) === 5){
         return true
+    } else{
+        return false
     }
 }
 
-alert("Your String has spaces: " + hasSpaces(aString));
-
+alert("Your number is 5: " + isFive(aNumber));
