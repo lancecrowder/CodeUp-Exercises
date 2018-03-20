@@ -8,13 +8,14 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-var name = prompt("What's your name?");
 
-function sayHello(name) {
-    return ("Hello, " + name + "!!!")
-}
-
-alert (sayHello(name));
+// var name = prompt("What's your name?");
+//
+// function sayHello(name) {
+//     return ("Hello, " + name + "!!!")
+// }
+//
+// alert (sayHello(name));
 
 /**
  * TODO:
@@ -34,12 +35,12 @@ alert (sayHello(name));
  * console.
  */
 
-var myName = "Lance!";
-console.log(myName);
+// var myName = "Lance!";
+// console.log(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-// var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -58,6 +59,17 @@ console.log(myName);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+
+
+function isTwo(random) {
+    if(random === 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isTwo(random));
 
 /**
  * TODO:
