@@ -24,8 +24,8 @@ alert (sayHello(name));
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = sayHello(name);
-console.log(helloMessage);
+// var helloMessage = sayHello(name);
+// console.log(helloMessage);
 
 /**
  * TODO:
@@ -34,7 +34,8 @@ console.log(helloMessage);
  * console.
  */
 
-// var myName = "Lance"
+var myName = "Lance!";
+console.log(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
