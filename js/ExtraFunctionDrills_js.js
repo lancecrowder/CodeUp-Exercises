@@ -8,6 +8,12 @@
 //
 // console.log(identity(oneParameter));
 
+//function identity(arg){
+//  return arg;
+//}
+
+// identity("123")
+
 //Write a function named isOdd that accepts a number and returns true if the passed number is odd, otherwise false
 
 // var myNumber = prompt("Please, enter a number.");
@@ -117,7 +123,7 @@
 //     return (Number(aNumber) / 2)
 // }
 //
-// alert("The Cube of your number is: " + half(aNumber));
+// alert("Half of your number is: " + half(aNumber));
 
 //Write a function named double that accepts a number and returns the number doubled
 
