@@ -61,15 +61,15 @@ var random = Math.floor((Math.random() * 3) + 1);
  */
 
 
-function isTwo(random) {
-    if(random === 2) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-console.log(isTwo(random));
+// function isTwo(random) {
+//     if(random === 2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// console.log(isTwo(random));
 
 /**
  * TODO:
@@ -82,6 +82,18 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+
+var tipPercent = prompt ("What percent would you like to tip?");
+var billAmount = prompt("How much is the bil?");
+
+tipPercent = Number(tipPercent);
+billAmount = Number(billAmount);
+
+function tipAmount(tipPercent, billAmount) {
+    return (billAmount * tipPercent);
+}
+
+console.log (tipAmount(tipPercent, billAmount));
 
 /**
  * TODO:
