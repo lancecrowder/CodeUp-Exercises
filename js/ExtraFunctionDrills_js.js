@@ -121,10 +121,19 @@
 
 //Write a function named double that accepts a number and returns the number doubled
 
-var aNumber = prompt("Please enter a Number");
+// var aNumber = prompt("Please enter a Number");
+//
+// function double(aNumber) {
+//     return (Number(aNumber) * 2)
+// }
+//
+// alert("Double your number is: " + double(aNumber));
 
-function double(aNumber) {
-    return (Number(aNumber) * 2)
+//Write a function named isValidPassword that accepts a string and returns a
+// boolean value based on the rules from the working with data types exercise
+
+var password = prompt("Please, enter a new password");
+
+function isValidPassword(password) {
+
 }
-
-alert("Double your number is: " + double(aNumber));
