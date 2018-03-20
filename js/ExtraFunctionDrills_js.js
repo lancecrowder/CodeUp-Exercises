@@ -111,10 +111,20 @@
 
 //Write a function named half that accepts a number and returns the number halved
 
+// var aNumber = prompt("Please enter a Number");
+//
+// function half(aNumber) {
+//     return (Number(aNumber) / 2)
+// }
+//
+// alert("The Cube of your number is: " + half(aNumber));
+
+//Write a function named double that accepts a number and returns the number doubled
+
 var aNumber = prompt("Please enter a Number");
 
-function half(aNumber) {
-    return (Number(aNumber) / 2)
+function double(aNumber) {
+    return (Number(aNumber) * 2)
 }
 
-alert("The Cube of your number is: " + half(aNumber));
+alert("Double your number is: " + double(aNumber));
