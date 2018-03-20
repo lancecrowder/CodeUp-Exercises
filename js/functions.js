@@ -134,6 +134,7 @@ console.log(applyDiscount(originalPrice, discountPercent));
 
 alert("Discount: $" + applyDiscount(originalPrice,discountPercent).toFixed(2));
 
+
 // function decrement(someNumber) {
 //     console.log('decrement was called')
 //     return someNumber-1;
