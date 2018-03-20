@@ -95,6 +95,8 @@ function tipAmount(tipPercent, billAmount) {
 
 console.log (tipAmount(tipPercent, billAmount));
 
+alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2))
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
