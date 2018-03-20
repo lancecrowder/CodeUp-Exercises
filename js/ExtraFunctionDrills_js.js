@@ -38,14 +38,27 @@
 
 //Write a function named isPositive that returns true if the passed number is greater than 0
 
+// var myNumber = prompt("Please, enter a number.");
+//
+// function isPositive(myNumber) {
+//     if (myNumber > 0){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+//
+// alert("Your number is Positive:  " + isPositive(myNumber));
+
+//Write a function named decrement that accepts a number and returns the number minus 1
+
 var myNumber = prompt("Please, enter a number.");
 
-function isPositive(myNumber) {
-    if (myNumber > 0){
-        return true
-    } else {
-        return false
-    }
+function decrement(myNumber) {
+
+    return (--myNumber);
+
 }
 
-alert("Your number is Positive:  " + isPositive(myNumber));
+alert("Your number minus one is: " + decrement(myNumber));
+
