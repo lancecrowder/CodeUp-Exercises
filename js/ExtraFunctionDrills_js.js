@@ -52,13 +52,25 @@
 
 //Write a function named decrement that accepts a number and returns the number minus 1
 
-var myNumber = prompt("Please, enter a number.");
+// var myNumber = prompt("Please, enter a number.");
+//
+// function decrement(myNumber) {
+//     return (--myNumber);
+// }
+//
+// alert("Your number minus one is: " + decrement(myNumber));
 
-function decrement(myNumber) {
+//Write a function named hasSpaces that accepts a string and returns true if the string contains any space characters
 
-    return (--myNumber);
+var aString = prompt("Please type a String.");
 
+function hasSpaces(aString) {
+    if (aString.indexOf(" ") === -1) {
+        return false
+    } else {
+        return true
+    }
 }
 
-alert("Your number minus one is: " + decrement(myNumber));
+alert("Your String has spaces: " + hasSpaces(aString));
 
