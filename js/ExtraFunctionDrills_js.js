@@ -76,15 +76,25 @@
 
 //Write a function named isFive that accepts a number and returns true if the number is equal to 5
 
-var aNumber = prompt("Please, enter a number");
+// var aNumber = prompt("Please, enter a number");
+//
+//
+// function isFive(aNumber) {
+//     if (Number(aNumber) === 5){
+//         return true
+//     } else{
+//         return false
+//     }
+// }
+//
+// alert("Your number is 5: " + isFive(aNumber));
 
+//Write a function named square that accepts a number and returns the number times itself
 
-function isFive(aNumber) {
-    if (Number(aNumber) === 5){
-        return true
-    } else{
-        return false
-    }
+var aNumber = prompt("Please enter a Number");
+
+function square(aNumber) {
+    return (Number(aNumber) * Number(aNumber))
 }
 
-alert("Your number is 5: " + isFive(aNumber));
+alert("The Square of your number is: " + square(aNumber));
