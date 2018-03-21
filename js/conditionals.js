@@ -16,34 +16,34 @@
  * Can you refactor your code to use functions?
  */
 
-var enterNumber = confirm("would you like to play a game?");
-
-if (enterNumber){
-    var yourNumber = prompt("Please, enter a number.");
-        yourNumber = Number(yourNumber);
-            if (isNaN(yourNumber)) {
-                alert("That is not a number")
-                }  else {
-                    if (yourNumber % 2 === 0) {
-                        alert("Your number is even")
-                    } else {
-                        alert("Your number is NOT EVEeeN.  Mmnnaaaa!")
-                    }
-
-                    alert("100 plus your number is: " + (yourNumber + 100));
-
-                    if (yourNumber > 0) {
-                        alert("Your number is Positive.");
-                    } else if (yourNumber < 0) {
-                        alert("Your Number is Negative.");
-                    } else
-                        alert("Your number is Zero.")
-                    }
-}
-
-else {
-    alert ("Kill Joy!")
-}
+// var enterNumber = confirm("Would you like to play a game?");
+//
+// if (enterNumber){
+//     var yourNumber = prompt("Please, enter a number.");
+//         yourNumber = Number(yourNumber);
+//             if (isNaN(yourNumber)) {
+//                 alert("That is not a number")
+//                 }  else {
+//                     if (yourNumber % 2 === 0) {
+//                         alert("Your number is even")
+//                     } else {
+//                         alert("Your number is NOT EVEeeN.  Mmnnaaaa!")
+//                     }
+//
+//                     alert("100 plus your number is: " + (yourNumber + 100));
+//
+//                     if (yourNumber > 0) {
+//                         alert("Your number is Positive.");
+//                     } else if (yourNumber < 0) {
+//                         alert("Your Number is Negative.");
+//                     } else
+//                         alert("Your number is Zero.")
+//                     }
+// }
+//
+// else {
+//     alert ("Kill Joy!")
+// }
 
 
 
@@ -67,7 +67,22 @@ else {
  * console.logging the function's return value
  */
 
+var aColor = prompt ("Do you like Blue, Red, or Cyan?");
 
+function analyzeColor(aColor) {
+    if (aColor == "blue") {
+        alert ("Blue is the color of the sky")
+    } else if (aColor == "red"){
+        alert ("Strawberries are red")
+    } else if (aColor == "cyan") {
+        alert("I don't know anything about cyan")
+    } else {
+            alert ("I don't recognize that color")
+        }
+        return aColor;
+    }
+
+console.log(analyzeColor(aColor));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
