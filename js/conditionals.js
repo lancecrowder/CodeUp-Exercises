@@ -67,22 +67,22 @@
  * console.logging the function's return value
  */
 
-var aColor = prompt ("Do you like Blue, Red, or Cyan?");
-
-function analyzeColor(aColor) {
-    if (aColor == "blue") {
-        alert ("Blue is the color of the sky")
-    } else if (aColor == "red"){
-        alert ("Strawberries are red")
-    } else if (aColor == "cyan") {
-        alert("I don't know anything about cyan")
-    } else {
-            alert ("I don't recognize that color")
-        }
-        return aColor;
-    }
-
-console.log(analyzeColor(aColor));
+// var aColor = prompt ("Do you like Blue, Red, or Cyan?");
+//
+// function analyzeColor(aColor) {
+//     if (aColor === "blue") {
+//         alert ("Blue is the color of the sky")
+//     } else if (aColor === "red"){
+//         alert ("Strawberries are red")
+//     } else if (aColor === "cyan") {
+//         alert("I don't know anything about cyan")
+//     } else {
+//             alert ("I don't recognize that color")
+//         }
+//         return aColor;
+//     }
+//
+// console.log(analyzeColor(aColor));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -97,11 +97,41 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message everytime you refresh the page
  */
 
+function seeRandom(randomColor) {
+    return randomColor;
+}
+
+console.log(seeRandom(randomColor));
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+var switchColor = randomColor;
 
+switch(switchColor){
+    case "red":
+        alert ("Red Rocks");
+        break;
+    case "Orange":
+        alert("Orange Oranges");
+        break;
+    case "Yellow":
+        alert("Amarillo by Morning");
+        break;
+    case "green":
+        alert ("Mean Green Marine");
+        break;
+    case "blue":
+        alert("Bluest Eyes in Texas");
+        break;
+    case "indigo":
+        alert ("I don't have anything clever for Indigo...");
+        break;
+    case "violet":
+        alert("Violet Fems?!");
+        break;
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
