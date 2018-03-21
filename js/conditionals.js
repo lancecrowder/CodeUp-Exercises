@@ -138,7 +138,6 @@ switch(switchColor){
         break;
 }
 
-
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
