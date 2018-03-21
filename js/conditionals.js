@@ -16,13 +16,35 @@
  * Can you refactor your code to use functions?
  */
 
-var enterNumber = confirm("would you like to enter a number?")
+var enterNumber = confirm("would you like to play a game?");
 
 if (enterNumber){
-    var yournumber = prompt("Please, enter your number.")
-} else {
+    var yourNumber = prompt("Please, enter a number.");
+        yourNumber = Number(yourNumber);
+            if (isNaN(yourNumber)) {
+                alert("That is not a number")
+                }  else {
+                    if (yourNumber % 2 === 0) {
+                        alert("Your number is even")
+                    } else {
+                        alert("Your number is NOT EVEeeN.  Mmnnaaaa!")
+                    }
+
+                    alert("100 plus your number is: " + (yourNumber + 100));
+
+                    if (yourNumber > 0) {
+                        alert("Your number is Positive.");
+                    } else if (yourNumber < 0) {
+                        alert("Your Number is Negative.");
+                    } else
+                        alert("Your number is Zero.")
+                    }
+}
+
+else {
     alert ("Kill Joy!")
 }
+
 
 
 /* ########################################################################## */
@@ -44,6 +66,8 @@ if (enterNumber){
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+
 
 // Don't change the next two lines!
 // These lines create two variables for you:
