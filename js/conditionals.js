@@ -71,13 +71,13 @@
 //
 // function analyzeColor(aColor) {
 //     if (aColor === "blue") {
-//         alert ("Blue is the color of the sky")
+//         alert ("Blue is the color of the sky");
 //     } else if (aColor === "red"){
-//         alert ("Strawberries are red")
+//         alert ("Strawberries are red");
 //     } else if (aColor === "cyan") {
-//         alert("I don't know anything about cyan")
+//         alert("I don't know anything about cyan");
 //     } else {
-//             alert ("I don't recognize that color")
+//             alert ("I don't recognize that color");
 //         }
 //         return aColor;
 //     }
@@ -97,11 +97,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message everytime you refresh the page
  */
 
-function seeRandom(randomColor) {
-    return randomColor;
-}
-
-console.log(seeRandom(randomColor));
+// function seeRandom(randomColor) {
+//     return randomColor;
+// }
+//
+// console.log(seeRandom(randomColor));
 
 /**
  * TODO:
@@ -109,34 +109,34 @@ console.log(seeRandom(randomColor));
  */
 // var switchColor = randomColor;
 
-var switchColor = prompt("Please, enter one of the following colors: 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'");
-
-switch(switchColor){
-    case "red":
-        alert ("Red Rocks");
-        break;
-    case "orange":
-        alert("Orange Oranges");
-        break;
-    case "yellow":
-        alert("Amarillo by Morning");
-        break;
-    case "green":
-        alert ("Mean Green Marine");
-        break;
-    case "blue":
-        alert("Bluest Eyes in Texas");
-        break;
-    case "indigo":
-        alert ("I don't have anything clever for Indigo...");
-        break;
-    case "violet":
-        alert("Violet Fems?!  let's be honest... none of these are clever.");
-        break;
-    default:
-        alert("Sorry, I don't recognize that color.");
-        break;
-}
+// var switchColor = prompt("Please, enter one of the following colors: 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'");
+//
+// switch(switchColor){
+//     case "red":
+//         alert ("Red Rocks");
+//         break;
+//     case "orange":
+//         alert("Orange Oranges");
+//         break;
+//     case "yellow":
+//         alert("Amarillo by Morning");
+//         break;
+//     case "green":
+//         alert ("Mean Green Marine");
+//         break;
+//     case "blue":
+//         alert("Bluest Eyes in Texas");
+//         break;
+//     case "indigo":
+//         alert ("I don't have anything clever for Indigo...");
+//         break;
+//     case "violet":
+//         alert("Violet Fems?!  let's be honest... none of these are clever.");
+//         break;
+//     default:
+//         alert("Sorry, I don't recognize that color.");
+//         break;
+// }
 
 /**
  * TODO:
@@ -167,6 +167,12 @@ switch(switchColor){
  * return value.
  */
 
+// var luckyNumber = prompt("what is your lucky number?(1-5)");
+// var purchaseAmount = prompt("How much is your bill?");
+//
+// function calculateTotal(luckyNumber, purchaseAmount){
+//     if
+// }
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
