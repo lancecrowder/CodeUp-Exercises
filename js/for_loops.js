@@ -1,9 +1,10 @@
+var anyNumber  = prompt("Pick a Number, any Number!");
 
-function showMultiplicationTable(yourNumber = prompt("Pick a Number, any Number!")){
-    yourNumber=Number(yourNumber);
+function showMultiplicationTable(anyNumber){
+    parseFloat(anyNumber);
     for (var i = 1; i <= 10; i++){
-        console.log(yourNumber +" * "+i+" = "+ (yourNumber*i))
+        console.log((anyNumber) +" * "+(i)+" = "+ (anyNumber*i))
     }
 }
 
-showMultiplicationTable();
+showMultiplicationTable(anyNumber);
