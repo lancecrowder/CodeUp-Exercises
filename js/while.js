@@ -17,9 +17,8 @@ do {
         allCones = allCones-purchased;
     } else  if(purchased > allCones){
         console.log("I cannot sell you "+ purchased + "Cones.  I only have "+ allCones);
-        continue;
     } else  {
-        console.log("I sold them all!!")
+        console.log("I sold them all!!");
         break;
     }
 
