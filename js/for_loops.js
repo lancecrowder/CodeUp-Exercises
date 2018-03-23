@@ -1,3 +1,5 @@
+'use strict';
+
 // var anyNumber  = prompt("Pick a Number, any Number!");
 //
 // function showMultiplicationTable(anyNumber){
@@ -24,6 +26,6 @@
 // }
 
 for (var i=1; i<10; i++) {
-    // parseFloat(i);
-    console.log(i.repeat(i));
+    var aString=i.toString();
+    console.log(aString.repeat(i));
 }
