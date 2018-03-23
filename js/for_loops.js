@@ -25,7 +25,11 @@
 //     console.log(randomNumber + isOdd(randomNumber));
 // }
 
-for (var i=1; i<10; i++) {
-    var aString=i.toString();
-    console.log(aString.repeat(i));
+// for (var i=1; i<10; i++) {
+//     var aString=i.toString();
+//     console.log(aString.repeat(i));
+// }
+
+for (var i=100; i>=5; i=i-5) {
+    console.log(i);
 }
