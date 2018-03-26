@@ -133,7 +133,10 @@
      *      ---
      *      ...
      */
-
+    books.forEach(function(books) {
+        var index = books.indexOf(books.title);
+        console.log("Book #" + (index +1));
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
