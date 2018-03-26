@@ -39,7 +39,7 @@
      * Refactor your above code to use a `forEach` loop
      */
     names.forEach(function (element) {
-        console.log(element)
+        console.log(element);
     });
     /**
      * TODO:
@@ -55,20 +55,20 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    function first(i) {
-        return i = names [0];
+    function first(names) {
+        return names [0];
     }
 
     console.log(first(names));
-
-    function second(i) {
-        return i =names [1];
+/////////////////////////////////////////////////////////////
+    function second(names) {
+        return names [1];
     }
 
     console.log(second(names));
-
-    function last(i) {
-        return i = names [names.length-1];
+//////////////////////////////////////////////////////////////
+    function last(names) {
+        return names [names.length-1];
     }
 
     console.log(last(names));
