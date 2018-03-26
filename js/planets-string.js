@@ -26,7 +26,8 @@
      * string, and <li> tags around each planet.
      */
 
-    let planets = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
-    console.log(planets);
+    console.log(planetsArray.join ("<br>"));
+
+    document.write("<ul><li>" + planetsArray.join("</li><li>") + "</li> </ul>");
 
 })();
