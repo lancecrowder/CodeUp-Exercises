@@ -9,13 +9,13 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-// var name = prompt("What's your name?");
-//
-// function sayHello(name) {
-//     return ("Hello, " + name + "!!!")
-// }
-//
-// alert (sayHello(name));
+var name = prompt("What's your name?");
+
+function sayHello(name) {
+    return ("Hello, " + name + "!!!")
+}
+
+alert (sayHello(name));
 
 /**
  * TODO:
@@ -25,8 +25,8 @@
  * console.log 'helloMessage' to check your work
  */
 
-// var helloMessage = sayHello(name);
-// console.log(helloMessage);
+var helloMessage = sayHello(name);
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -35,12 +35,12 @@
  * console.
  */
 
-// var myName = "Lance!";
-// console.log(myName);
+var myName = "Lance!";
+console.log(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-// var random = Math.floor((Math.random() * 3) + 1);
+var random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -61,15 +61,15 @@
  */
 
 
-// function isTwo(random) {
-//     if(random === 2) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-//
-// console.log(isTwo(random));
+function isTwo(random) {
+    if(random === 2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isTwo(random));
 
 /**
  * TODO:
@@ -83,17 +83,17 @@
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-// var tipPercent = prompt ("What percent would you like to tip?");
-// var billAmount = prompt("How much is the bil?");
-//
-// tipPercent = Number(tipPercent);
-// billAmount = Number(billAmount);
-//
-// function tipAmount(tipPercent, billAmount) {
-//     return (billAmount * tipPercent);
-// }
-//
-// console.log (tipAmount(tipPercent, billAmount));
+var tipPercent = prompt ("What percent would you like to tip?");
+var billAmount = prompt("How much is the bil?");
+
+tipPercent = Number(tipPercent);
+billAmount = Number(billAmount);
+
+function tipAmount(tipPercent, billAmount) {
+    return (billAmount * tipPercent);
+}
+
+console.log (tipAmount(tipPercent, billAmount));
 
 
 /**
@@ -103,7 +103,7 @@
  * then display the dollar amount they should tip
  */
 
-// alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2));
+alert("Tip: $"+tipAmount(tipPercent, billAmount).toFixed(2));
 
 /**
  * TODO:
@@ -135,9 +135,9 @@ console.log(applyDiscount(originalPrice, discountPercent));
 alert("Discount: $" + applyDiscount(originalPrice,discountPercent).toFixed(2));
 
 
-// function decrement(someNumber) {
-//     console.log('decrement was called')
-//     return someNumber-1;
-// }
-//
-// console.log(decrement(3))
+function decrement(someNumber) {
+    console.log('decrement was called')
+    return someNumber-1;
+}
+
+console.log(decrement(3))
