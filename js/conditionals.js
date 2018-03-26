@@ -16,34 +16,34 @@
  * Can you refactor your code to use functions?
  */
 
-// var enterNumber = confirm("Would you like to play a game?");
-//
-// if (enterNumber){
-//     var yourNumber = prompt("Please, enter a number.");
-//         yourNumber = Number(yourNumber);
-//             if (isNaN(yourNumber)) {
-//                 alert("That is not a number")
-//                 }  else {
-//                     if (yourNumber % 2 === 0) {
-//                         alert("Your number is even")
-//                     } else {
-//                         alert("Your number is NOT EVEeeN.  Mmnnaaaa!")
-//                     }
-//
-//                     alert("100 plus your number is: " + (yourNumber + 100));
-//
-//                     if (yourNumber > 0) {
-//                         alert("Your number is Positive.");
-//                     } else if (yourNumber < 0) {
-//                         alert("Your Number is Negative.");
-//                     } else
-//                         alert("Your number is Zero.")
-//                     }
-// }
-//
-// else {
-//     alert ("Kill Joy!")
-// }
+var enterNumber = confirm("Would you like to play a game?");
+
+if (enterNumber){
+    var yourNumber = prompt("Please, enter a number.");
+        yourNumber = Number(yourNumber);
+            if (isNaN(yourNumber)) {
+                alert("That is not a number")
+                }  else {
+                    if (yourNumber % 2 === 0) {
+                        alert("Your number is even")
+                    } else {
+                        alert("Your number is NOT EVEeeN.  Mmnnaaaa!")
+                    }
+
+                    alert("100 plus your number is: " + (yourNumber + 100));
+
+                    if (yourNumber > 0) {
+                        alert("Your number is Positive.");
+                    } else if (yourNumber < 0) {
+                        alert("Your Number is Negative.");
+                    } else
+                        alert("Your number is Zero.")
+                    }
+}
+
+else {
+    alert ("Kill Joy!")
+}
 
 
 
@@ -67,22 +67,22 @@
  * console.logging the function's return value
  */
 
-// var aColor = prompt ("Do you like Blue, Red, or Cyan?");
-//
-// function analyzeColor(aColor) {
-//     if (aColor === "blue") {
-//         alert ("Blue is the color of the sky");
-//     } else if (aColor === "red"){
-//         alert ("Strawberries are red");
-//     } else if (aColor === "cyan") {
-//         alert("I don't know anything about cyan");
-//     } else {
-//             alert ("I don't recognize that color");
-//         }
-//         return aColor;
-//     }
-//
-// console.log(analyzeColor(aColor));
+var aColor = prompt ("Do you like Blue, Red, or Cyan?");
+
+function analyzeColor(aColor) {
+    if (aColor === "blue") {
+        alert ("Blue is the color of the sky");
+    } else if (aColor === "red"){
+        alert ("Strawberries are red");
+    } else if (aColor === "cyan") {
+        alert("I don't know anything about cyan");
+    } else {
+            alert ("I don't recognize that color");
+        }
+        return aColor;
+    }
+
+console.log(analyzeColor(aColor));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -97,46 +97,46 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message everytime you refresh the page
  */
 
-// function seeRandom(randomColor) {
-//     return randomColor;
-// }
-//
-// console.log(seeRandom(randomColor));
+function seeRandom(randomColor) {
+    return randomColor;
+}
+
+console.log(seeRandom(randomColor));
 
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-// var switchColor = randomColor;
+var switchColor = randomColor;
 
-// var switchColor = prompt("Please, enter one of the following colors: 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'");
-//
-// switch(switchColor){
-//     case "red":
-//         alert ("Red Rocks");
-//         break;
-//     case "orange":
-//         alert("Orange Oranges");
-//         break;
-//     case "yellow":
-//         alert("Amarillo by Morning");
-//         break;
-//     case "green":
-//         alert ("Mean Green Marine");
-//         break;
-//     case "blue":
-//         alert("Bluest Eyes in Texas");
-//         break;
-//     case "indigo":
-//         alert ("I don't have anything clever for Indigo...");
-//         break;
-//     case "violet":
-//         alert("Violet Fems?!  let's be honest... none of these are clever.");
-//         break;
-//     default:
-//         alert("Sorry, I don't recognize that color.");
-//         break;
-// }
+var switchColor = prompt("Please, enter one of the following colors: 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'");
+
+switch(switchColor){
+    case "red":
+        alert ("Red Rocks");
+        break;
+    case "orange":
+        alert("Orange Oranges");
+        break;
+    case "yellow":
+        alert("Amarillo by Morning");
+        break;
+    case "green":
+        alert ("Mean Green Marine");
+        break;
+    case "blue":
+        alert("Bluest Eyes in Texas");
+        break;
+    case "indigo":
+        alert ("I don't have anything clever for Indigo...");
+        break;
+    case "violet":
+        alert("Violet Fems?!  let's be honest... none of these are clever.");
+        break;
+    default:
+        alert("Sorry, I don't recognize that color.");
+        break;
+}
 
 /**
  * TODO:
@@ -167,12 +167,12 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-// var luckyNumber = prompt("what is your lucky number?(1-5)");
-// var purchaseAmount = prompt("How much is your bill?");
-//
-// function calculateTotal(luckyNumber, purchaseAmount){
-//     if
-// }
+var luckyNumber = prompt("what is your lucky number?(1-5)");
+var purchaseAmount = prompt("How much is your bill?");
+
+function calculateTotal(luckyNumber, purchaseAmount){
+    if
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -180,5 +180,5 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
