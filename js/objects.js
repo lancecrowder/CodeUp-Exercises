@@ -62,7 +62,7 @@
             var discount = (shoppers.amount*.12);
             console.log("He qualifies for a 12% discount of $" + (discount) + ".  His total is now $" + (shoppers.amount - discount));
         }   else {
-            console.log("He needs to spend $" + (200-shoppers.amount) + " To get the 12% discount.");
+            console.log("He needs to spend an additional $" + (200-shoppers.amount) + " To get the 12% discount.");
         }
     });
 
@@ -133,9 +133,10 @@
      *      ---
      *      ...
      */
-    books.forEach(function(books) {
-        var index = books.indexOf(books.title);
+    books.forEach(function(book, index) {
         console.log("Book #" + (index +1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName +" "+ book.author.lastName);
     });
     /**
      * Bonus:
