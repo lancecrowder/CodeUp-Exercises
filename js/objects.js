@@ -16,7 +16,7 @@
         firstName: "Lance",
         lastName: "Crowder",
         sayHello: function () {
-            return ("Hello from " + person.firstName + " " + person.lastName + "!!!")
+            return ("Hello from " + this.firstName + " " + this.lastName + "!!!")
         }
     };
 
@@ -52,17 +52,18 @@
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
+        {name: 'George', amount: 320},
+        // {name: "Bob", amount: 297.79},
     ];
 
-    //if shopperSpend > 200 then shopperSpend -= shopperSpend*.12
     shoppers.forEach(function (shoppers) {
-        console.log(shoppers.name + " Spent $" + shoppers.amount);
+        console.log(shoppers.name + " Spent $" + shoppers.amount.toFixed(2));
         if (shoppers.amount >= 200) {
             var discount = (shoppers.amount * .12);
-            console.log("He qualifies for a 12% discount of $" + (discount) + ".  His total is now $" + (shoppers.amount - discount));
+            console.log("He  qualifies for a 12% discount of $" + (discount.toFixed(2)) +
+                ".  His total is now $" + ((shoppers.amount*.88).toFixed(2)));
         } else {
-            console.log("He needs to spend an additional $" + (200 - shoppers.amount) + " To get the 12% discount.");
+            console.log("He needs to spend an additional $" + ((200 - shoppers.amount).toFixed(2)) + " To get the 12% discount.");
         }
     });
 
@@ -89,7 +90,7 @@
             }
         },
         {
-            title: "Where the red fern Grows",
+            title: "Where the Red Fern Grows",
             author: {
                 firstName: "Wilson",
                 lastName: "Rawls"
