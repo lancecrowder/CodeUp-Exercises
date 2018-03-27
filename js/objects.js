@@ -13,9 +13,9 @@
      */
 
     var person = {
-        firstName : "Lance",
-        lastName : "Crowder",
-        sayHello : function () {
+        firstName: "Lance",
+        lastName: "Crowder",
+        sayHello: function () {
             return ("Hello from " + person.firstName + " " + person.lastName + "!!!")
         }
     };
@@ -58,11 +58,11 @@
     //if shopperSpend > 200 then shopperSpend -= shopperSpend*.12
     shoppers.forEach(function (shoppers) {
         console.log(shoppers.name + " Spent $" + shoppers.amount);
-        if (shoppers.amount >= 200){
-            var discount = (shoppers.amount*.12);
+        if (shoppers.amount >= 200) {
+            var discount = (shoppers.amount * .12);
             console.log("He qualifies for a 12% discount of $" + (discount) + ".  His total is now $" + (shoppers.amount - discount));
-        }   else {
-            console.log("He needs to spend an additional $" + (200-shoppers.amount) + " To get the 12% discount.");
+        } else {
+            console.log("He needs to spend an additional $" + (200 - shoppers.amount) + " To get the 12% discount.");
         }
     });
 
@@ -81,30 +81,40 @@
      */
 
     var books = [
-        {title : "Ready Player One",
-         author : {
-            firstName: "Ernest",
-            lastName: "Cline"}
+        {
+            title: "Ready Player One",
+            author: {
+                firstName: "Ernest",
+                lastName: "Cline"
+            }
         },
-        {title : "Where the red fern Grows",
-         author : {
-            firstName: "Wilson",
-            lastName: "Rawls"}
+        {
+            title: "Where the red fern Grows",
+            author: {
+                firstName: "Wilson",
+                lastName: "Rawls"
+            }
         },
-        {title : "A Collection of Stories",
-         author : {
-            firstName: "Jack",
-            lastName: "London"}
+        {
+            title: "A Collection of Stories",
+            author: {
+                firstName: "Jack",
+                lastName: "London"
+            }
         },
-        {title : "A Message to Garcia",
-         author : {
-            firstName: "Elbert",
-            lastName: "Hubbard"}
+        {
+            title: "A Message to Garcia",
+            author: {
+                firstName: "Elbert",
+                lastName: "Hubbard"
+            }
         },
-        {title : "The Tommyknockers",
-         author : {
-            firstName: "Stephen",
-            lastName: "King"}
+        {
+            title: "The Tommyknockers",
+            author: {
+                firstName: "Stephen",
+                lastName: "King"
+            }
         },
 
     ];
@@ -133,11 +143,11 @@
      *      ---
      *      ...
      */
-    books.forEach(function(book, index) {
-        console.log("Book #" + (index +1));
-        console.log("Title: " + book.title);
-        console.log("Author: " + book.author.firstName +" "+ book.author.lastName);
-    });
+    // books.forEach(function(book, index) {
+    //     console.log("Book #" + (index +1));
+    //     console.log("Title: " + book.title);
+    //     console.log("Author: " + book.author.firstName +" "+ book.author.lastName);
+    // });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -148,5 +158,37 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    var addBook = true;
+
+    while (addBook === true) {
+        var con = confirm("Would you like to add a new book?")
+        if (con === true) {
+            addBook = true;
+            var aBookName = prompt("What is the name of the book you want to enter?");
+            var aFirstName = prompt("What is the authors first name?");
+            var aLastName = prompt("What is the authors last name?");
+
+            function createBook() {
+                return {
+                    title: aBookName,
+                    author: {
+                        firstName: aFirstName,
+                        lastName: aLastName
+                    }
+                };
+            }
+
+            books.push(createBook());
+        }
+
+        else {
+            addBook = false;
+        }
+    }
+    books.forEach(function (book, index) {
+        console.log("Book #" + (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " + book.author.lastName);
+    });
 
 })();
