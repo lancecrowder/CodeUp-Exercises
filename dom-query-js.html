@@ -5,6 +5,10 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
+    <button id="btn1">Primary</button>
+    <button id="btn2">Secondary</button>
+    <button id="btn3">Tertiary</button>
+    <button id="btn4">Quaternary</button>
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
@@ -28,42 +32,72 @@
 <script>
     (function() {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
+        // : Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
         // console.log(mainHeader);
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
-
-        // TODO: Uncomment the next line and get the sub header element by id
+        // : Set inner html of mainHeader to "JavaScript is Cool"
+        var listenerOne = function () {
+            mainHeader.innerHTML = "JavaScript is Cool";
+        };
+        var btn1 = document.getElementById('btn1');
+            btn1.addEventListener('click', listenerOne, false);
+        // : Uncomment the next line and get the sub header element by id
+////////////////////////////////////////////////////////////////////////////////////////////////////
         var subHeader = document.getElementById("sub-header");
         // console.log(subHeader);
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = '#0000FF';
+        // : Set the text color of subHeader to blue
+        var listenerTwo = function (event) {
+            subHeader.style.color = '#0000FF';
+        };
 
-        // TODO: Uncomment the next line and get all list items
+        var btn2 = document.getElementById('btn2');
+        btn2.addEventListener('click', listenerTwo, false);
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+        // : Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
         // console.log(listItems);
 
-        // TODO: Set text color on every other list item to grey
-         for (var i=0; i<=listItems.length; i+=2){
-             // if (i % 2 === 0){
+        // : Set text color on every other list item to grey
+        var listenerThree = function () {
+            for (var i = 0; i <= listItems.length; i += 2) {
+                // if (i % 2 === 0){
                 document.getElementsByTagName('li')[i].style.color = '#aaaaaa';
-            // }
-        }
-        // TODO: Set text color of li with dbid = 1 to blue
-        // document.getElementsByTagName('li')[0].style.color = '#0000FF';
-        listItems[0].style.color = '#0000FF';
+                // }
+            }
+        };
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        var btn3 = document.getElementById('btn3');
+        btn3.addEventListener('click', listenerThree, false);
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // : Set text color of li with dbid = 1 to blue
+        // document.getElementsByTagName('li')[0].style.color = '#0000FF';
+        var listenerFour = function () {
+            listItems[0].style.color = '#0000FF';
+        };
+
+        var btn4 = document.getElementById('btn4');
+        btn4.addEventListener('click', listenerFour, false);
+
+        // : Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
         // console.log(subParagraphs);
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        // : Change the text in the first sub paragraph to "Mission Accomplished!"
         // for (var i=0; i<=subParagraphs.length; i++) {
             // if (subParagraphs[i] === subParagraphs [0]) {
                 subParagraphs[0].innerText = "Mission Accomplished!";
+
+        // if you need to target an elemient on the page
+        // rightclick it in the browser
+        // inspect
+        // Inside inspector -> copy -> copy selector
+        // will give the most efficeint CSS selector for that specific element
+        //  document.querySelector() specific element
+        //  document.querySelectorAll() all of that element type.
+
             // }
         // }
     })();
