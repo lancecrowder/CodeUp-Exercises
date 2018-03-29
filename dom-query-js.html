@@ -47,13 +47,14 @@
         // console.log(listItems);
 
         // TODO: Set text color on every other list item to grey
-         for (var i=0; i<=listItems.length; i++){
-             if ([i] % 2 === 0){
+         for (var i=0; i<=listItems.length; i+=2){
+             // if (i % 2 === 0){
                 document.getElementsByTagName('li')[i].style.color = '#aaaaaa';
-            }
+            // }
         }
         // TODO: Set text color of li with dbid = 1 to blue
-        document.getElementsByTagName('li')[0].style.color = '#0000FF';
+        // document.getElementsByTagName('li')[0].style.color = '#0000FF';
+        listItems[0].style.color = '#0000FF';
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
