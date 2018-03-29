@@ -6,9 +6,13 @@
 </head>
 <body>
     <button id="btn1">Primary</button>
+    <!--<button id="unbtn1">UNPrimary</button>-->
     <button id="btn2">Secondary</button>
+    <!--<button id="unbtn2">UNSecondary</button>-->
     <button id="btn3">Tertiary</button>
+    <!--<button id="unbtn3">UNTertiary</button>-->
     <button id="btn4">Quaternary</button>
+    <!--<button id="unbtn4">UNQuaternary</button>-->
 
 <h1 id="main-header">Hello World!</h1>
 <ul>
@@ -40,8 +44,16 @@
         var listenerOne = function () {
             mainHeader.innerHTML = "JavaScript is Cool";
         };
+
+        // var removerOne = function () {
+        //     btn1.removeEventListener('click', listenerOne, false);
+        // };
+
         var btn1 = document.getElementById('btn1');
             btn1.addEventListener('click', listenerOne, false);
+
+        // var unbtn1 = document.getElementById('unbtn1');
+        //     unbtn1.addEventListener('click', removerOne, false);
         // : Uncomment the next line and get the sub header element by id
 ////////////////////////////////////////////////////////////////////////////////////////////////////
         var subHeader = document.getElementById("sub-header");
