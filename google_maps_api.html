@@ -48,6 +48,14 @@
                 animation: google.maps.Animation.DROP,
                 // icon: google.maps.Shapes.CAUTION
             });
+            marker.addListener('click', toggleBounce);
+                function toggleBounce() {
+                    if (marker.getAnimation() !== null) {
+                        marker.setAnimation(null);
+                    } else {
+                        marker.setAnimation(google.maps.Animation.BOUNCE);
+                    }
+                }
 
                 var info = new google.maps.InfoWindow({
                     content: "<strong>Slice Parlor</strong><br>Best Pizza in the World!!!"
