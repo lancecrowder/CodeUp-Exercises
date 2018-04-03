@@ -44,7 +44,9 @@
 
             var marker = new google.maps.Marker({
                 position: results[0].geometry.location,
-                map: map
+                map: map,
+                animation: google.maps.Animation.DROP,
+                // icon: google.maps.Shapes.CAUTION
             });
 
                 var info = new google.maps.InfoWindow({
