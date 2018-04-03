@@ -47,7 +47,6 @@
                 position: results[0].geometry.location,
                 map: map,
                 animation: google.maps.Animation.DROP,
-                // icon: google.maps.Shapes.CAUTION
             });
             marker.addListener('click', toggleBounce);
                 function toggleBounce() {
@@ -59,7 +58,7 @@
                 }
 
                 var info = new google.maps.InfoWindow({
-                    content: "<strong>Slice Parlor</strong><br>Best Pizza in the World!!!"
+                    content: "<strong>Slice Parlor</strong><br>Best Pizza in the World!!! <br> <img src=\"IMG/sliceParlor.png\" height=\"70\" width=\"175\"/></style>\n"
                 });
             info.open(map, marker);
 
