@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Maps Exercise</title>
+    <style>
+        #map-canvas {
+            width: 900px;
+            height: 900px;
+        }
+    </style>
 </head>
 <body>
 <div id="map-canvas"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBpP0JojNd6fNi3qEkr-qX55eXmmLSts"></script>
+
+<script>
+    var mapOptions = {
+        zoom: 17,
+        center : {
+            lat: 29.426791,
+            lng: -98.489602
+        },
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    var mapCanvas = document.getElementById('map-canvas');
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    var geocoder = new google.maps.Geocoder();
+
+    var address = {
+        address: "15620 Senior Rd, Von Ormy, TX, 78073"
+    };
+
+    function callback(results, status) {
+        // geocoder.geocode({ "address": address }, function(results, status) {
+
+            if (status === google.maps.GeocoderStatus.OK) {
+            // Recenter the map over the address
+            // console.log(results[0].geometry.location);
+            map.setCenter(results[0].geometry.location);
+
+        } else {
+            // Show an error message with the status if our request fails
+            alert("Geocoding was not successful - STATUS: " + status);
+        }
+    }
+    geocoder.geocode(address, callback);
+
+</script>
 
 </body>
 </html>
