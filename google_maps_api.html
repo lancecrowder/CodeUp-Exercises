@@ -17,12 +17,12 @@
 
 <script>
     var mapOptions = {
-        zoom: 20,
+        zoom: 19,
         center : {
             lat: 29.426791,
             lng: -98.489602
         },
-        mapTypeId: google.maps.MapTypeId.HYBRID
+        mapTypeId: google.maps.MapTypeId.SATELLITE
     };
     var mapCanvas = document.getElementById('map-canvas');
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -33,6 +33,7 @@
         address: "3410 Central Ave, Albuquerque, NM, 87106"
     };
 
+
     function callback(results, status) {
         // geocoder.geocode({ "address": address }, function(results, status) {
 
@@ -40,6 +41,16 @@
             // Recenter the map over the address
             // console.log(results[0].geometry.location);
             map.setCenter(results[0].geometry.location);
+
+            var marker = new google.maps.Marker({
+                position: results[0].geometry.location,
+                map: map
+            });
+
+                var info = new google.maps.InfoWindow({
+                    content: "<strong>Slice Parlor</strong><br>Best Pizza in the World!!!"
+                });
+            info.open(map, marker);
 
         } else {
             // Show an error message with the status if our request fails
