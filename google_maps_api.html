@@ -5,8 +5,8 @@
     <title>Google Maps Exercise</title>
     <style>
         #map-canvas {
-            width: 900px;
-            height: 900px;
+            width: auto;
+            height: 85vh;
         }
     </style>
 </head>
@@ -47,6 +47,7 @@
                 position: results[0].geometry.location,
                 map: map,
                 animation: google.maps.Animation.DROP,
+                icon: src="IMG/codeup-arrow.png"
             });
             marker.addListener('click', toggleBounce);
                 function toggleBounce() {
@@ -58,7 +59,7 @@
                 }
 
                 var info = new google.maps.InfoWindow({
-                    content: "<strong>Slice Parlor</strong><br>Best Pizza in the World!!! <br> <img src=\"IMG/sliceParlor.png\" height=\"70\" width=\"175\"/></style>\n"
+                    content: "<p align='center'><strong>Slice Parlor</strong><br>Best Pizza in the World!!!<br><img src=\"IMG/sliceParlor.png\" height=\"70\" width=\"175\"/></style></P>"
                 });
             info.open(map, marker);
 
@@ -69,7 +70,7 @@
     }
     geocoder.geocode(address, callback);
 
-</script>
+    </script>
 
 </body>
 </html>
