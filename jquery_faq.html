@@ -37,7 +37,7 @@
 <script>
     $('dt').click (function () {
         // event.preventDefault();
-        $('dd').toggleClass();
+        $(this).next().toggleClass().css('background-color', 'papayawhip');
     });
 </script>
 </body>
