@@ -5,14 +5,34 @@
 </head>
 <body>
 <h1>Konami Code</h1>
+<!--<p>Please enter a code</p>-->
+<!--<form>-->
+    <!--<input type="text" id="textfield" name="textfield" placeholder="Enter Code Here">-->
+<!--</form>-->
 
-<script src="/js/jquery-2.2.4.js"></script>
+<script src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict";
+    $(document).keydown(function(event){
+        // event.preventDefault();
+        // console.log(event.keyCode);
 
-    $(document).keyup(function(event){
-        console.log(event.keyCode);
+        const theCode = [38, 40, 38, 40, 37, 39,37, 39, 66, 65, 13];
+        var i = 0;
+        if (event.keyCode == theCode[theCode.length-1]){
+            console.log(event.keyCode);
+            var userCode = [];
+            userCode.push(event.keyCode);
+            // i++;
+
+        } return userCode;
+
+        if (userCode === theCode) {
+            alert ("You have added 30 lives!");
+        }
+        // event.preventDefault();
     });
+
 </script>
 </body>
 </html>
