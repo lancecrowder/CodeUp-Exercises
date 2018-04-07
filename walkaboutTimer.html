@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Walkabout Timer</title>
+    <style>
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <h1>Hit Start to begin</h1>
+
 <div>
     <button>START</button>
 </div>
     <script>
-        $('h1').css({'color': 'white','text-align': 'center'});
-        $('body').css('background-color', 'black');
-        $('div').css('text-align', 'center');
+        var d = new Date();
+        var currentTime = d.getTime();
+        var beBack = d.setHours(13, 30, 0, 0);
+        var diff = beBack - currentTime;
+        var turnAround = currentTime + diff;
+
+        console.log(currentTime);
+        console.log(beBack);
+        console.log(diff);
+        console.log(turnAround);
+
+        if (turnAround){
+            
+        }
+
     </script>
 // get current time
 //get today @ 1:30pm = now
