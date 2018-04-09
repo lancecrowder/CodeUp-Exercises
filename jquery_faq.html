@@ -34,11 +34,44 @@
         <dt>What is the National Park Service budget?</dt>
         <dd class="invisible">FY 2017 Enacted: $2.932 billion</dd>
     </dl>
+        <button class="yellowUp">I make last li's yellow</button>
+
+    <h3 id="national-parks-heading">National Parks</h3>
+    <ul id="national-parks">
+        <li>Arches</li>
+        <li>Badlands</li>
+        <li>Carlsbad Caverns</li>
+        <li>Denali</li>
+        <li>Everglades</li>
+    </ul    >
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+    <h3>State Parks of New Mexico</h3>
+    <ul id="state-parks-newMexico">
+        <li>Petroglyph National Monumner</li>
+        <li>Rio Grande Nature Center</li>
+        <li>Bandelier National Monument</li>
+        <li>DManzano Mountains State Park</li>
+        <li>Capulin Volcano National Monument</li>
+    </ul>
 <script>
     $('dt').click (function () {
         // event.preventDefault();
         $(this).next().toggleClass('invisible').css('background-color', '#40E0D0');
-    })
+    });
+
+    $('.yellowUp').click(function(){
+       $('ul').each(function () {
+           // console.log($(this));
+           $(this).children().last().css('background-color', 'yellow');
+       });
+    });
 </script>
 </body>
 </html>
