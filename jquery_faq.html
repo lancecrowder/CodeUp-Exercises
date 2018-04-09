@@ -80,7 +80,7 @@
     });
 
     $('h3').click (function (){
-        $(this).next().css('font-weight', 'bold');
+        $(this).next().slideToggle().css('font-weight', 'bold');
     });
 
     $('li').click(function () {
@@ -89,7 +89,10 @@
 
     $('span').click(function () {
         $(this).parent().hide()
-    })
+    });
+
+    $('ul').hide();
+
 </script>
 </body>
 </html>
