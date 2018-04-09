@@ -77,7 +77,9 @@
         $(this).next().css('font-weight', 'bold');
     });
 
-
+    $('li').click(function () {
+        $(this).parent().children().first().css('color', 'blue');
+    });
 </script>
 </body>
 </html>
