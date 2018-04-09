@@ -17,6 +17,8 @@
     <span>X</span>
 </div>
 
+<h2>Wanna register for the site?!?!</h2>
+
 <h1 align="center">National Parks FAQ</h1>
     <dl>
         <dt>Who is the director of the National Park Service?</dt>
@@ -92,6 +94,13 @@
     });
 
     $('ul').hide();
+
+    $('h2').hide();
+
+    setInterval(function () {
+        console.log("I'm Faded");
+        $('h2').fadeIn(8000);
+    }, 8000)
 
 </script>
 </body>
