@@ -28,7 +28,7 @@
     <script>
         var d = new Date();
         var currentTime = d.getTime();
-        var beBack = d.setHours(13, 30, 0, 0);
+        var beBack = d.setHours(22,15, 0, 0);
         var diff = beBack - currentTime;
         var turnAround = currentTime + diff;
 
@@ -37,9 +37,12 @@
         console.log(diff);
         console.log(turnAround);
 
-        if (turnAround){
-            
-        }
+        $('button').click(function () {
+            setTimeout(function () {
+                console.log("I work!!!");
+            }, turnAround);
+        });
+
 
     </script>
 // get current time
