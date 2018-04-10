@@ -6,8 +6,20 @@
 </head>
 <body>
 <script src="js/jquery-2.2.4.js"></script>
+<h1>The Blog</h1>
+<div id="posts"></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-
+<script>
+    (function () {
+    var jsXhr = $.ajax("data/blog.json");
+    jsXhr.done(function (data) {
+        data.forEach(function (data) {
+            $('#posts').append('<h2>' + data.title + '</h2><br><br>' + data.content + '<br><br>' + data.categories + "<br><br>" + data.date)
+        })
+    });
+})()
+</script>
 </body>
 </html>
