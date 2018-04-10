@@ -25,6 +25,19 @@
 (function() {
     "use strict";
     // TODO: Create an ajax GET request for /data/inventory.json
+    var jqXhr = $.ajax('json/inventory.json')
+
+        jqXhr.done(function (data) {
+        data.forEach(function(data){
+            console.log(data);
+            $('#insertProducts').append('<tr><td>' + data.title + '</td><td>' + data.quantity + '</td><td>' + data.price + '</td><td>' + data.categories + '</td></tr>');
+        });
+            jqXhr.fail(function(jqXhr, status, error) {
+            alert("There was an error! Check the console for details");
+            console.log("Response status: " + status);
+            console.log("Error object: " + error);
+        });
+    });
 
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
