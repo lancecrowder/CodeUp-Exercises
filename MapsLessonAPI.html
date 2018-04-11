@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps Lesson API</title>
+</head>
+<body>
+<script src="js/jquery-2.2.4.js"></script>
+
+<script>
+    var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+        APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
+        lat:    29.423017, // get coordinates from google maps
+        lon:   -98.48527, //Google maps will be lng
+        units: "imperial",
+        cnt: 3
+    }).done(function(request) {
+        console.log(request);
+        // need a loop
+        console.log("maxTemp " + request.list[0].temp.max);
+        console.log("minTemp " + request.list[0].temp.min);
+        console.log("Humidity " + request.list[0].humidity);
+    });
+</script>
+
+</body>
+</html>
