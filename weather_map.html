@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Map</title>
+    <link rel="stylesheet" href="css/weather-map.css">
 </head>
 <body>
 <script src="js/jquery-2.2.4.js"></script>
-
+<div id="container">
+    <h1>Weather Application</h1>
+    <h2 id="city"></h2>
+    <div id="box" name="today"></div>
+    <div id="box" name="tomorrow"></div>
+    <div id="box" name="nextDay"></div>
+</div>
 <script>
     var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
         APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
@@ -20,6 +27,7 @@
         console.log("maxTemp " + request.list[0].temp.max);
         console.log("minTemp " + request.list[0].temp.min);
         console.log("Humidity " + request.list[0].humidity);
+        $('#city').append(request.city.name);
     });
 </script>
 
