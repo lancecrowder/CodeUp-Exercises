@@ -31,7 +31,7 @@
     var jsXhr = $.ajax("data/blog.json");
     jsXhr.done(function (data) {
         data.forEach(function (data) {
-            $('#posts').append('<h2>' + data.title + '</h2><br><br>' + data.content + '<br><br>' + data.categories + "<br><br>" + data.date)
+            $('#posts').append('<h2>' + data.title + '</h2> <br>' + data.content + '<br><br>' + data.categories + "<br><br>" + data.date)
         })
     });
 })()
