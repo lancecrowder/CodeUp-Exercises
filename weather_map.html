@@ -10,9 +10,9 @@
 <div id="container">
     <h1>Weather Application</h1>
     <h2 id="city"></h2>
-    <div id="box" name="today"></div>
-    <div id="box" name="tomorrow"></div>
-    <div id="box" name="nextDay"></div>
+    <div class="box" id="0"></div>
+    <div class="box" id="1"></div>
+    <div class="box" id="2"></div>
 </div>
 <script>
     var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
@@ -21,14 +21,26 @@
         lon:   -98.48527, //Google maps will be lng
         units: "imperial",
         cnt: 3
-    }).done(function(request) {
-        console.log(request);
-        // need a loop
-        console.log("maxTemp " + request.list[0].temp.max);
-        console.log("minTemp " + request.list[0].temp.min);
-        console.log("Humidity " + request.list[0].humidity);
-        $('#city').append(request.city.name);
     });
+    request.done(function(data) {
+        console.log(data);
+        $('#city').append(data.city.name);
+        // need a loop
+        data.list.forEach(function (forcast, i) {
+            // for(var i = 0; i<=3; i++) {
+            console.log(forcast.weather);
+            $('#' + i).append('<h3 align="center">' + forcast.temp.max + '/' + forcast.temp.min + '</h3>');
+                $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forcast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
+                $('#' + i).append('<p align="center"><strong>' + forcast.weather[0].main + ' :</strong>' + forcast.weather[0].description + '</p>');
+                $('#' + i).append('<p align="center"><strong>Humidity : </strong>' + forcast.humidity + '</p>');
+                $('#' + i).append('<p align="center"><strong>Pressure : </strong>' + forcast.pressure + '</p>');
+            // }
+        });
+        console.log(data.list[0].temp.max);
+        console.log(data.list[0].temp.min);
+        console.log(data.list[0].humidity);
+    });
+
 </script>
 
 
