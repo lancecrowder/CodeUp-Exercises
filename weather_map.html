@@ -13,11 +13,11 @@
     <div class="box" id="0"></div>
     <div class="box" id="1"></div>
     <div class="box" id="2"></div>
-    Latitude: <input type="number" id="aLat">
-    Longitude: <input type="number" id="aLon">
-    <button id="submit">Submit!</button>
+        <!--Latitude: <input type="number" id="aLat">-->
+        <!--Longitude: <input type="number" id="aLon">-->
+        <!--<button id="submit">Submit!</button>-->
 </div>
-<div id="current"></div>
+<!--<div id="current"></div>-->
 <div id="map-canvas"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBpP0JojNd6fNi3qEkr-qX55eXmmLSts"></script>
 
@@ -35,7 +35,7 @@
         // need a loop
         data.list.forEach(function (forecast, i) {
             // for(var i = 0; i<=3; i++) {
-            console.log(forecast.weather);
+            // console.log(forecast.weather);
             $('#' + i).append('<h3 align="center">' + forecast.temp.max + '/' + forecast.temp.min + '</h3>');
                 $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
                 $('#' + i).append('<p align="center"><strong>' + forecast.weather[0].main + ' :</strong>' + forecast.weather[0].description + '</p>');
@@ -43,9 +43,9 @@
                 $('#' + i).append('<p align="center"><strong>Pressure : </strong>' + forecast.pressure + '</p>');
             // }
         });
-        console.log(data.list[0].temp.max);
-        console.log(data.list[0].temp.min);
-        console.log(data.list[0].humidity);
+        // console.log(data.list[0].temp.max);
+        // console.log(data.list[0].temp.min);
+        // console.log(data.list[0].humidity);
     });
 
 
@@ -64,12 +64,12 @@
                 cnt: 3
             });
             request.done(function (data) {
-                console.log(data);
+                // console.log(data);
                 $('#city').append(data.city.name);
                 // need a loop
                 data.list.forEach(function (forecast, i) {
                     // for(var i = 0; i<=3; i++) {
-                    console.log(forecast.weather);
+                    // console.log(forecast.weather);
                     $('#' + i).append('<h3 align="center">' + forecast.temp.max + '/' + forecast.temp.min + '</h3>');
                     $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
                     $('#' + i).append('<p align="center"><strong>' + forecast.weather[0].main + ' :</strong>' + forecast.weather[0].description + '</p>');
@@ -123,7 +123,7 @@
                 cnt: 3
             });
             request.done(function (data) {
-                console.log(data);
+                // console.log(data);
                 $('#city').append(data.city.name);
                 // need a loop
                 data.list.forEach(function (forecast, i) {
@@ -141,7 +141,5 @@
 
     })();
 </script>
-
-
 </body>
 </html>
