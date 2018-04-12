@@ -17,6 +17,7 @@
     Longitude: <input type="number" id="aLon">
     <button id="submit">Submit!</button>
 </div>
+<div id="current"></div>
 <div id="map-canvas"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBpP0JojNd6fNi3qEkr-qX55eXmmLSts"></script>
 
@@ -106,6 +107,38 @@
             map: map,
             draggable: true
         });
+
+        google.maps.event.addListener(marker, 'dragend', function(evt){
+            $('#0').empty();
+            $('#1').empty();
+            $('#2').empty();
+            $('#city').empty();
+            var lat = evt.latLng.lat().toFixed(3);
+            var lon = evt.latLng.lng().toFixed(3);
+            var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+                APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
+                lat: lat, // get coordinates from google maps
+                lon: lon, //Google maps will be lng
+                units: "imperial",
+                cnt: 3
+            });
+            request.done(function (data) {
+                console.log(data);
+                $('#city').append(data.city.name);
+                // need a loop
+                data.list.forEach(function (forecast, i) {
+                    // for(var i = 0; i<=3; i++) {
+                    console.log(forecast.weather);
+                    $('#' + i).append('<h3 align="center">' + forecast.temp.max + '/' + forecast.temp.min + '</h3>');
+                    $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
+                    $('#' + i).append('<p align="center"><strong>' + forecast.weather[0].main + ' :</strong>' + forecast.weather[0].description + '</p>');
+                    $('#' + i).append('<p align="center"><strong>Humidity : </strong>' + forecast.humidity + '</p>');
+                    $('#' + i).append('<p align="center"><strong>Pressure : </strong>' + forecast.pressure + '</p>');
+                    // }
+                });
+            });
+        });
+
     })();
 </script>
 
