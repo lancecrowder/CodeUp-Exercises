@@ -13,7 +13,49 @@
     <div class="box" id="0"></div>
     <div class="box" id="1"></div>
     <div class="box" id="2"></div>
+    Latitude: <input type="number" id="aLat">
+    Longitude: <input type="number" id="aLon">
+    <button id="submit">Submit!</button>
 </div>
+<div id="map-canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBpP0JojNd6fNi3qEkr-qX55eXmmLSts"></script>
+
+<script>
+    var mapOptions = {
+        zoom: 4,
+        center : {
+            lat: 29.426791,
+            lng: -98.489602
+        },
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var mapCanvas = document.getElementById('map-canvas');
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+    var geocoder = new google.maps.Geocoder();
+
+    function callback(results, status) {
+        // geocoder.geocode({ "address": address }, function(results, status) {
+
+        if (status === google.maps.GeocoderStatus.OK) {
+            // Recenter the map over the address
+            // console.log(results[0].geometry.location);
+            map.setCenter(results[0].geometry.location);
+
+            var codeup = {lat: 29.426719, lng: -98.489593};
+            var marker = new google.maps.Marker({
+                position: codeup,
+                map: map
+            });
+
+        } else {
+            // Show an error message with the status if our request fails
+            alert("Geocoding was not successful - STATUS: " + status);
+        }
+    }
+    // geocoder.geocode(coordinates, callback);
+
+</script>
 <script>
     var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
         APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
@@ -26,14 +68,14 @@
         console.log(data);
         $('#city').append(data.city.name);
         // need a loop
-        data.list.forEach(function (forcast, i) {
+        data.list.forEach(function (forecast, i) {
             // for(var i = 0; i<=3; i++) {
-            console.log(forcast.weather);
-            $('#' + i).append('<h3 align="center">' + forcast.temp.max + '/' + forcast.temp.min + '</h3>');
-                $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forcast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
-                $('#' + i).append('<p align="center"><strong>' + forcast.weather[0].main + ' :</strong>' + forcast.weather[0].description + '</p>');
-                $('#' + i).append('<p align="center"><strong>Humidity : </strong>' + forcast.humidity + '</p>');
-                $('#' + i).append('<p align="center"><strong>Pressure : </strong>' + forcast.pressure + '</p>');
+            console.log(forecast.weather);
+            $('#' + i).append('<h3 align="center">' + forecast.temp.max + '/' + forecast.temp.min + '</h3>');
+                $('#' + i).append('<img src="http://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png" alt="Purty Picture" class="icon">');
+                $('#' + i).append('<p align="center"><strong>' + forecast.weather[0].main + ' :</strong>' + forecast.weather[0].description + '</p>');
+                $('#' + i).append('<p align="center"><strong>Humidity : </strong>' + forecast.humidity + '</p>');
+                $('#' + i).append('<p align="center"><strong>Pressure : </strong>' + forecast.pressure + '</p>');
             // }
         });
         console.log(data.list[0].temp.max);
@@ -41,6 +83,13 @@
         console.log(data.list[0].humidity);
     });
 
+    $('#submit').click(function (userInput) {
+        function userInput() {
+            var lat = $('#aLat');
+            var lon = $('#aLon');
+
+        }
+    });
 </script>
 
 

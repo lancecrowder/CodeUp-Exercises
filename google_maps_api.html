@@ -13,9 +13,7 @@
 <body>
 <h1 align="center" draggable="true">Google Maps Exercise</h1>
 <div id="map-canvas"></div>
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTBpP0JojNd6fNi3qEkr-qX55eXmmLSts"></script>
-
 <script>
     var mapOptions = {
         zoom: 20,
@@ -27,24 +25,14 @@
     };
     var mapCanvas = document.getElementById('map-canvas');
     var map = new google.maps.Map(mapCanvas, mapOptions);
-
     var geocoder = new google.maps.Geocoder();
-
-    var address = {
-        address: "3410 Central Ave, Albuquerque, NM, 87106"
-    };
-
+    var codeup = { lat: 29.426791, lng: -98.489602 };
 
     function callback(results, status) {
-        // geocoder.geocode({ "address": address }, function(results, status) {
-
             if (status === google.maps.GeocoderStatus.OK) {
-            // Recenter the map over the address
-            // console.log(results[0].geometry.location);
             map.setCenter(results[0].geometry.location);
-
             var marker = new google.maps.Marker({
-                position: results[0].geometry.location,
+                position: codeup,
                 map: map,
                 animation: google.maps.Animation.DROP,
                 icon: src="IMG/codeup-arrow.png"
@@ -58,19 +46,12 @@
                     }
                 }
 
-                var info = new google.maps.InfoWindow({
-                    content: "<p align='center'><strong>Slice Parlor</strong><br>Best Pizza in the World!!!<br><img src=\"IMG/sliceParlor.png\" height=\"70\" width=\"175\"/></style></P>"
-                });
-            info.open(map, marker);
-
         } else {
             // Show an error message with the status if our request fails
             alert("Geocoding was not successful - STATUS: " + status);
         }
     }
-    geocoder.geocode(address, callback);
-
+    geocoder.geocode(coordinates, callback);
     </script>
-
 </body>
 </html>
