@@ -28,19 +28,17 @@
     <script>
         var d = new Date();
         var currentTime = d.getTime();
-        var beBack = d.setHours(22,15, 0, 0);
+        var beBack = d.setHours(12,29, 0, 0);
         var diff = beBack - currentTime;
-        var turnAround = currentTime + diff;
 
         console.log(currentTime);
         console.log(beBack);
         console.log(diff);
-        console.log(turnAround);
 
         $('button').click(function () {
             setTimeout(function () {
                 console.log("I work!!!");
-            }, turnAround);
+            }, diff);
         });
 
 
