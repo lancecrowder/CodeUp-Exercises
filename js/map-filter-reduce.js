@@ -37,8 +37,8 @@ console.log(moreThan3Languages);
 const usersEmail = users.map(user => user.email);
 console.log(usersEmail);
 
-const result = users.reduce((newObject, user) => {
-        newObject[user.id] = user;
-        return newObject;
+const result = users.reduce((accumulator,currentUser) => {
+        accumulator[currentUser.id] = currentUser;
+        return accumulator;
 }, {});
 console.log(result);
