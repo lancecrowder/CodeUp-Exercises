@@ -37,7 +37,8 @@ console.log(moreThan3Languages);
 const usersEmail = users.map(user => user.email);
 console.log(usersEmail);
 
-
-
-
-
+const result = users.reduce((newObject, user) => {
+        newObject[user.id] = user;
+        return newObject;
+}, {});
+console.log(result);
