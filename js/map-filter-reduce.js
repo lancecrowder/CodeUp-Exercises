@@ -31,3 +31,9 @@ const users = [
     },
 ];
 
+const moreThan3Languages = users.filter(user => user.languages.length > 2);
+console.log(moreThan3Languages);
+
+
+
+
